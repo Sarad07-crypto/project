@@ -21,7 +21,21 @@ if ($_POST['reg']) {
     } else {
         echo "All fields are required";
     }
+
 }
+// if ($_POST['display']) {
+//     include 'php_connection.php';
+//     $displ = "SELECT * FROM login_tbl";
+//     $displ = mysqli_query($conne, $displ);
+//     if ($displ) {
+//         echo "Data displayed successfully";
+//         $total = mysqli_num_rows($displ);
+//         echo "TOTAL NUMBER OF RECORDS IS " + $total;
+//     } else {
+//         echo "Data not displayed" . mysqli_error($conne);
+//     }
+// }
+
 
 
 ?>
@@ -57,6 +71,7 @@ if ($_POST['reg']) {
         </select><br><br>
         <input type="submit" value="Submit" name="reg"><br><br>
         <input type="reset" value="Reset"><br><br>
+        <input type="button" value="Display" name="display" onclick="display.php"><br><br>
     </form>
 </body>
 
